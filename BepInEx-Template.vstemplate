@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>BepInEx-Template</Name>
+    <Description>This is a Bepinex mod template made by VALIDUSER</Description>
+    <ProjectType>CSharp</ProjectType>
+	<LanguageTag>C#</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+	<ProjectTypeTag>Mods</ProjectTypeTag>		  
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BepInEx-Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+	<CreateInPlace>true</CreateInPlace>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="BepInEx-Template.csproj" File="BepInEx-Template.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="GameDir.targets">GameDir.targets</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Main.cs">Main.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
